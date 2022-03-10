@@ -1,1 +1,1 @@
-// alert('track.js file loaded');
+alert('track.js file loaded');
