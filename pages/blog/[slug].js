@@ -2,9 +2,9 @@ import { useRouter } from 'next/router'
 
 const Post = () => {
   const router = useRouter()
-  const { sno } = router.query
-
-  return <p>Post: {sno}</p>
+  const { slug } = router.query
+  console.log(router.query)
+  return <p>Post: {slug}</p>
 }
 
 export default Post
