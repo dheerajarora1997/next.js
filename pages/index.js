@@ -14,28 +14,22 @@ export default function Home() {
       <Script src="./track.js" strategy="lazyOnload" />
 
       <main className={styles.main}>
+        <nav className={styles.mainNav}>
+          <ul>
+            <li><a href="http://">Home</a></li>
+            <li><a href="http://">Blog</a></li>
+            <li><a href="http://">Contact</a></li>
+          </ul>
+        </nav>
         <h1 className={styles.title}>Coding Blog</h1>
-
-        <div className={styles.grid}>
-          <a href="" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a href="" className={styles.card}>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a href="" className={styles.card}>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+        <p className=""></p>
+        <div className="blogs">
+          <h2>Popular B</h2>
+          <div className="blogItem">
+            <h3>Coding blog in Next.js</h3>
+            <p className="">Coding Blog in Next.js framework.</p>
+            <Image layout="responsive" width="100" height="100" src="/orange-car.jpg" lazyRoot="lazyRoot"></Image>
+          </div>
         </div>
       </main>
     </div>
