@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -16,9 +17,9 @@ export default function Home() {
       <main className={styles.main}>
         <nav className={styles.mainNav}>
           <ul>
-            <li><a href="http://">Home</a></li>
-            <li><a href="http://">Blog</a></li>
-            <li><a href="http://">Contact</a></li>
+            <Link href="/"><li>Home</li></Link>
+            <Link href="/about"><li>About</li></Link>
+            <Link href="/contact"><li>Contact</li></Link>
           </ul>
         </nav>
         <h1 className={styles.title}>Coding Blog</h1>
