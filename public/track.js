@@ -1,1 +1,1 @@
-alert('track.js file loaded');
+console.log('Load One Time');

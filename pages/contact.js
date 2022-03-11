@@ -6,13 +6,13 @@ function Contact() {
   return (
     <div>
       <nav className={styles.mainNav}>
-        <ul>
-          <Link href="/"><li>Home</li></Link>
-          <Link href="/about"><li>About</li></Link>
-          <Link href="/blog"><li>Blog</li></Link>
-          <Link href="/contact"><li>Contact</li></Link>
-        </ul>
-      </nav>
+          <ul>
+            <Link href="/"><li><a>Home</a></li></Link>
+            <Link href="/about"><li><a>About</a></li></Link>
+            <Link href="/blog"><li><a>Blog</a></li></Link>
+            <Link href="/contact"><li><a>Contact</a></li></Link>
+          </ul>
+        </nav>
     </div>
   )
 }
