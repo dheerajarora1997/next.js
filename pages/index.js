@@ -2,7 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
+
+import main from '../styles/main.module.scss';
 
 export default function Home() {
   return (
@@ -14,7 +16,7 @@ export default function Home() {
       </Head>
       <Script src="./track.js" strategy="lazyOnload" />
 
-      <main className={styles.main}>
+      <main className={` ${main.main} ${styles.main} `} >
         <nav className={styles.mainNav}>
           <ul>
             <Link href="/"><li><a>Home</a></li></Link>
